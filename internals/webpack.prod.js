@@ -41,7 +41,7 @@ module.exports = () => ({
         loader: 'file-loader?name=[name].[ext]'
       },
       {
-        test: /\.(mp4|webm|ogv)$/,
+        test: /\.(mp4|webm|ogv|ogg)$/,
         loader: 'file-loader?name=[name].[ext]'
       },
       {
