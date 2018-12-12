@@ -68,6 +68,8 @@ module.exports = () => ({
     ].concat(optionalFileRules))
   ],
   devServer: {
-    port: process.env.PORT
+    port: process.env.PORT,
+    hot: true,
+    host: '0.0.0.0'
   }
 });
