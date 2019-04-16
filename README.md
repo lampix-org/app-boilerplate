@@ -37,7 +37,7 @@ Sourcemaps are enabled by default for the development environment.
 
 #### Developing
 
-`src/index.js` is defined as the entry point of the application. You do not need to add scripts to `index.html`. As long as any dependency in the dependency tree connects to the root (`src/index.js`) directly or indirectly, Webpack will bundle the dependencies correctly. That means you should import ANY dependencies, including `json` files, images, CSS files and the whatever else you might need.
+`src/index.js` is defined as the entry point of the application. You do not need to add scripts to `index.html`. As long as any dependency in the dependency tree connects to the root (`src/index.js`) directly or indirectly, Webpack will bundle the dependencies correctly. That means you should import ANY dependencies, including `json` files, images, CSS files and the whatever else you might need. Webpack will also handle CSS `url()` statements internally, but the CSS with said statement still needs to be imported in JS.
 
 With the above in mind, get started developing by running `npm start` and going to the specified URL.
 
